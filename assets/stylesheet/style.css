@@ -2,14 +2,13 @@ html, body{
     padding: 0;
     margin: 0;
     outline: none;
-}
-
-body{
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .nav-bar{
     position: relative;
+    margin-right: -5px;
     height: 50px;
     background-color:#000;
     color: #fff;
@@ -38,6 +37,15 @@ body{
     transform: scale3d(1.10, 1.10, 1.10);
 }
 
+#wrapper>a:focus{
+    background-color: #ccc;
+    color: royalblue;
+}
+
+#intro{
+    display: inline-block;
+    margin-right: -16px;
+}
 
 #intro>h1 {
     position: absolute;
@@ -81,13 +89,18 @@ body{
 
 @media screen and (max-width: 732px){
 
+    #intro{
+        margin-left: -4px;
+    }
+
     #intro>canvas{
         animation: none;
         background-color: #293;
     }
 
     #intro>h1{
-        font-size: 3em;
+        font-size: 2.5em;
+        margin-top: 50%;
     }
 
     .nav-bar{
@@ -110,4 +123,9 @@ body{
     #wrapper>a:hover{
         transform: none;
     }
+
+     #wrapper>a:focus {
+         background-color: #ddd;
+         color: #222;
+     }
 }
