@@ -26,7 +26,7 @@ particlesJS('intro',
         "value": "#fff"
       },
       "shape": {
-        "type": "circle",
+        "type": "polygon",
         "stroke": {
           "width": 0,
           "color": "#fff"
@@ -69,7 +69,7 @@ particlesJS('intro',
       },
       "move": {
         "enable": true,
-        "speed": 12,
+        "speed": 18,
         "direction": "none",
         "random": false,
         "straight": false,

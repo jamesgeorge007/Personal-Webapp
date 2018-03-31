@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   Typed.new(".blink", {
     strings: [
         "Hey There People.",
-        "First of all Thanks for showing interest  on me.",
+        "I'm James George.",
+        "First of all Thank You<br>for showing interest<br>in me.",
         "Just some insights on myself.",
       "Full Stack Web Developer.",
       "Android Developer.",
@@ -10,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
       "Blogger.",
       "Enthusiastic Learner."
     ],
-    typeSpeed: 20,
+    typeSpeed: -50,
+    backSpeed: -30,
     loop: true,
   });
 });
