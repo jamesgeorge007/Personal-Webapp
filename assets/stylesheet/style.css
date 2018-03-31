@@ -16,48 +16,98 @@ body{
     
 }
 
-#intro{
-    animation-name: change-color;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
-    height: 33%;
-    width: 100%;
-    margin-top: -35px;
+#wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5px;
 }
+
+#wrapper>a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.4s ease-in-out;
+}
+
+#wrapper>a:hover{
+    background-color: #ddd;
+    color: #222;
+    transform: scale3d(1.10, 1.10, 1.10);
+}
+
+
+#intro>h1 {
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 20%;
+    color: #ecf0f1;
+    font-family: times;
+    font-size: 5em;
+}
+
+#intro>canvas {
+    position: absolute;
+    z-index: -1;
+    animation-name: change-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+} 
 
 @keyframes change-color {
     from {
-        background-color: #916;
+        background-color: #E27D60;
     }
     20% {
-        background-color: #234;
+        background-color: #C8A78C;
     }
     40% {
-        background-color: #832;
+        background-color: #659DBD;
     }
     60% {
-        background-color: #293;
+        background-color: #C38D9E;
     }
     80% {
-        background-color: #422;
+        background-color: #41B3A3;
     }
     to {
-        background-color: #238;
+        background-color: #BC986A;
     }
 }
 
-#intro>h1{
-    color: #fff;
-    text-decoration: underline;
-    text-align: center;
-    font-family: elephant;
-    font-size: 50px;
-}
+/* Media Queries */
 
-#intro>h2{
-    color: #fff;
-    text-align: center;
-    font-family: times;
-    font-size: 40px;
+@media screen and (max-width: 732px){
+
+    #intro>canvas{
+        animation: none;
+        background-color: #293;
+    }
+
+    #intro>h1{
+        font-size: 3em;
+    }
+
+    .nav-bar{
+        height: 210px;
+    }
+
+    #wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #wrapper>a{
+        width: 100%;
+        text-align: left;
+        border-radius: 0px;
+        border-bottom: 1px solid #ddd;
+        border-width: thin;
+    }
+
+    #wrapper>a:hover{
+        transform: none;
+    }
 }
