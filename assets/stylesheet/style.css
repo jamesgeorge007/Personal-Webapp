@@ -1,4 +1,6 @@
-html, body{
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+html,
+body {
     padding: 0;
     margin: 0;
     outline: none;
@@ -6,24 +8,25 @@ html, body{
     overflow-x: hidden;
 }
 
-.nav-bar{
+.nav-bar {
     position: relative;
     margin-right: -5px;
     height: 50px;
-    background-color:#000;
+    background-color: #000;
     color: #fff;
-    
 }
 
-#wrapper{
+#wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: 5px;
 }
 
-#wrapper>a{
+#wrapper a {
     text-decoration: none;
     padding: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
     font-size: 1.5em;
     text-align: center;
     color: #fff;
@@ -31,45 +34,46 @@ html, body{
     transition: all 0.4s ease-in-out;
 }
 
-#wrapper>a:hover{
+#wrapper a:hover {
     background-color: #ddd;
     color: #222;
     transform: scale3d(1.10, 1.10, 1.10);
 }
 
-#wrapper>a:focus{
+#wrapper a:focus {
     background-color: #ccc;
     color: royalblue;
 }
 
-#intro{
+#intro {
     display: inline-block;
     margin-right: -16px;
 }
 
-#intro>h1 {
+#intro .blink {
     position: absolute;
     margin-top: 25%;
     margin-left: 20%;
     color: #ecf0f1;
-    font-family: times;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
     font-size: 5em;
 }
 
-#intro>canvas {
+#intro canvas {
     position: absolute;
     z-index: -1;
     animation-name: change-color;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-} 
+}
 
 @keyframes change-color {
     from {
         background-color: #E27D60;
     }
     20% {
-        background-color: #C8A78C;
+        background-color: rgb(216, 126, 130);
     }
     40% {
         background-color: #659DBD;
@@ -81,51 +85,44 @@ html, body{
         background-color: #41B3A3;
     }
     to {
-        background-color: #BC986A;
+        background-color: rgb(202, 141, 61);
     }
 }
 
+
 /* Media Queries */
 
-@media screen and (max-width: 732px){
-
-    #intro{
+@media screen and (max-width: 732px) {
+    #intro {
         margin-left: -4px;
     }
-
-    #intro>canvas{
+    #intro canvas {
         animation: none;
         background-color: #293;
     }
-
-    #intro>h1{
+    #intro .blink {
         font-size: 2.5em;
         margin-top: 50%;
     }
-
-    .nav-bar{
+    .nav-bar {
         height: 210px;
     }
-
-    #wrapper{
+    #wrapper {
         display: flex;
         flex-wrap: wrap;
     }
-
-    #wrapper>a{
+    #wrapper>a {
         width: 100%;
         text-align: left;
         border-radius: 0px;
         border-bottom: 1px solid #ddd;
         border-width: thin;
     }
-
-    #wrapper>a:hover{
+    #wrapper a:hover {
         transform: none;
     }
-
-     #wrapper>a:focus {
-         background-color: #ddd;
-         color: #222;
-     }
+    #wrapper a:focus {
+        background-color: #ddd;
+        color: #222;
+    }
 }
