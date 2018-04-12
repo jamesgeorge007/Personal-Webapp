@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "Hey There People.",
             "I'm James George.",
             "Just some insights on myself.",
-            "Full Stack Web Developer.",
+            "Full Stack Developer.",
             "Android Developer.",
             "Youtuber.",
             "Blogger.",
