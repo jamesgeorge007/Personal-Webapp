@@ -52,7 +52,8 @@ body {
 
 #intro {
     display: inline-block;
-    margin-right: -16px;
+    height: 654px;
+    width: 1350pxrgb;
 }
 
 #intro .blink {
@@ -71,6 +72,31 @@ body {
     animation-name: change-color;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-family: cursive;
+    color: #333;
+    margin-top: 60px;
+    font-size: 2.5em;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+}
+
+.portfolio-section {
+    width: 800px;
+    margin: 30px auto;
+}
+
+.portfolio-section span a {
+    text-decoration: none;
+    margin: 60px;
+}
+
+.portfolio-section span a img {
+    height: 110px;
+    width: 120px;
 }
 
 @keyframes change-color {
@@ -96,6 +122,13 @@ body {
 
 
 /* Media Queries */
+
+@media screen and (min-width:1131px) {
+    #portfolio h1 {
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+}
 
 @media screen and (max-width: 732px) {
     #intro {
@@ -127,7 +160,7 @@ body {
         transition: all 0.4s ease-in-out;
     }
     .hamburger-btn:focus {
-        color: #777;
+        color: darkred;
     }
     #wrapper a {
         width: 100%;
@@ -143,8 +176,12 @@ body {
         color: royalblue;
         border-radius: 8px;
     }
-    .nav-contract {
+    .nav-contract a {
         transition: all 0.4s linear;
+        opacity: 0;
+    }
+    .nav-contract {
+        transition: all 0.4s ease-in-out;
         height: 0;
     }
     .nav-expand {
