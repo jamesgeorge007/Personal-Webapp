@@ -10,6 +10,6 @@ btn.addEventListener('click', () => {
     if (tracker % 2 == 0) {
         navBar.className = 'nav-bar nav-expand'
     } else {
-        navBar.className = 'nav-bar nav-contract'
+        navBar.className = 'nav-bar nav-collapse'
     }
 })

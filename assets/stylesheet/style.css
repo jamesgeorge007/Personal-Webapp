@@ -6,15 +6,18 @@ body {
     outline: none;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .nav-bar {
-    position: relative;
+    position: fixed;
     margin-right: -5px;
     height: 50px;
-    background-color: #000;
+    width: 100vw;
+    background-color: rgba( 20, 20, 20, 0.8);
     color: #fff;
     overflow-y: none;
+    z-index: 2;
 }
 
 #wrapper {
@@ -101,19 +104,19 @@ body {
 
 @keyframes change-color {
     from {
-        background-color: #E27D60;
+        background-color: rgb(245, 80, 20);
     }
     20% {
-        background-color: rgb(216, 126, 130);
+        background-color: rgb(235, 70, 20);
     }
     40% {
-        background-color: #659DBD;
+        background-color: rgb(225, 60, 20);
     }
     60% {
-        background-color: #C38D9E;
+        background-color: rgb(225, 50, 20);
     }
     80% {
-        background-color: #41B3A3;
+        background-color: rgb(200, 15, 180);
     }
     to {
         background-color: rgb(202, 141, 61);
@@ -123,10 +126,13 @@ body {
 
 /* Media Queries */
 
-@media screen and (min-width:1131px) {
+@media screen and (max-width:1131px) {
+    .nav-bar {
+        position: relative;
+    }
     #portfolio h1 {
-        line-height: 26px;
-        letter-spacing: 1px;
+        font-size: 1.8em;
+        line-height: 30px;
     }
 }
 
@@ -136,7 +142,7 @@ body {
     }
     #intro canvas {
         animation: none;
-        background-color: #293;
+        background-color: crimson;
     }
     #intro .blink {
         font-size: 2.5em;
@@ -151,7 +157,7 @@ body {
     }
     .hamburger-btn {
         display: block;
-        font-size: 1.3em;
+        font-size: 1.8em;
         width: 100%;
         text-align: right;
         border: none;
@@ -176,16 +182,40 @@ body {
         color: royalblue;
         border-radius: 8px;
     }
-    .nav-contract a {
+    .nav-collapse a {
         transition: all 0.4s linear;
         opacity: 0;
     }
-    .nav-contract {
+    .nav-collapse {
         transition: all 0.4s ease-in-out;
         height: 0;
     }
     .nav-expand {
         transition: all 0.4s linear;
-        height: 260px;
+        height: 250px;
+    }
+    #portfolio h1 {
+        margin-top: -20px;
+    }
+    .portfolio-section {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .portfolio-section span a {
+        margin: 0;
+    }
+    .portfolio-section span a img {
+        height: 60px;
+        width: 70px;
+    }
+    @media screen and (max-width:386px) {
+        .portfolio-section {
+            width: 100px;
+        }
+        .portfolio-section span a img {
+            width: 70px;
+            height: 80px;
+        }
     }
 }
