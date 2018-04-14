@@ -26,7 +26,7 @@
             padding: 5px;
         }
         
-        .hamburger-btn {
+        .nav-bar span .hamburger-btn {
             display: none;
         }
         
@@ -46,12 +46,12 @@
             background-color: #ddd;
             color: #222;
             transform: scale3d(1.10, 1.10, 1.10);
+            border-radius: 8px;
         }
         
         #wrapper a:focus {
             background-color: #ccc;
             color: royalblue;
-            border-radius: 8px;
         }
         
         #intro {
@@ -190,19 +190,24 @@
             #wrapper {
                 display: flex;
                 flex-wrap: wrap;
+                margin-top: 10px;
             }
-            .hamburger-btn {
+            .nav-bar span {
+                width: 100%;
+                height: 10px;
+            }
+            .nav-bar span .hamburger-btn {
                 display: block;
                 font-size: 1.8em;
-                width: 100%;
-                text-align: right;
-                margin-left: -10px;
+                width: 20%;
+                float: right;
+                margin-right: 10px;
                 border: none;
-                background-color: #000;
+                background-color: rgba( 20, 20, 20, 0.8);
                 color: rgb(225, 50, 20);
                 transition: all 0.4s ease-in-out;
             }
-            .hamburger-btn:focus {
+            .nav-bar span .hamburger-btn:focus {
                 color: #fff;
             }
             #wrapper a {
@@ -229,10 +234,10 @@
             }
             .nav-expand {
                 transition: all 0.4s linear;
-                height: 250px;
+                height: 260px;
             }
             #portfolio {
-                width: 480px;
+                width: 100%;
                 margin: 120px auto;
                 text-align: center;
             }
@@ -246,11 +251,11 @@
                 margin: 30px;
             }
             .portfolio-section span a img {
-                height: 80px;
-                width: 90px;
+                height: 110px;
+                width: 120px;
             }
             #articles {
-                width: 520px;
+                width: 100%;
                 margin: 180px auto;
                 text-align: center;
             }
@@ -258,14 +263,14 @@
                 display: none;
             }
             .articles-section span a img {
-                width: 110px;
-                height: 120px;
+                width: 130px;
+                height: 140px;
             }
         }
         
         @media screen and (max-width:386px) {
             #portfolio {
-                width: 120px;
+                width: 100%;
             }
             #portfolio h1 {
                 display: none;
@@ -278,7 +283,7 @@
                 height: 80px;
             }
             #articles {
-                width: 200px;
+                width: 100%;
             }
             #articles h1 {
                 display: none;
