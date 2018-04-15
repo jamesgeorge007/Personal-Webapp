@@ -81,6 +81,7 @@
         #portfolio {
             width: 800px;
             margin: 270px auto;
+            z-index: -1;
         }
         
         #portfolio h1 {
@@ -116,8 +117,8 @@
         
         #articles h1 {
             text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: 2.2em;
+            font-family: cursive;
+            font-size: 2.5em;
             color: #111;
         }
         
@@ -165,10 +166,9 @@
             }
             #portfolio h1 {
                 font-size: 1.8em;
-                line-height: 30px;
             }
             #articles h1 {
-                font-size: 1.5em;
+                font-size: 1.8em;
             }
         }
         
@@ -237,9 +237,8 @@
                 height: 260px;
             }
             #portfolio {
-                width: 100%;
+                width: 90%;
                 margin: 120px auto;
-                text-align: center;
             }
             #portfolio h1 {
                 margin-top: -20px;
@@ -251,45 +250,61 @@
                 margin: 30px;
             }
             .portfolio-section span a img {
-                height: 110px;
-                width: 120px;
+                height: 90px;
+                width: 100px;
             }
             #articles {
-                width: 100%;
+                width: 80%;
                 margin: 180px auto;
-                text-align: center;
             }
             #articles h2 {
                 display: none;
             }
             .articles-section span a img {
-                width: 130px;
-                height: 140px;
+                width: 90px;
+                height: 100px;
+            }
+        }
+        
+        @media screen and (max-width:520px) {
+            .portfolio-section {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
+            }
+            .articles-section {
+                display: flex;
+                flex-flow: column;
+                text-align: center;
             }
         }
         
         @media screen and (max-width:386px) {
             #portfolio {
                 width: 100%;
+                text-align: center;
             }
             #portfolio h1 {
                 display: none;
             }
             #portfolio h2 {
                 display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .portfolio-section span a img {
-                width: 70px;
-                height: 80px;
+                width: 50px;
+                height: 60px;
             }
             #articles {
                 width: 100%;
+                text-align: center;
             }
             #articles h1 {
                 display: none;
             }
             #articles h2 {
                 display: inline-block;
+                font-family: Georgia, 'Times New Roman', Times, serif;
             }
             .articles-section span a img {
                 width: 90px;
