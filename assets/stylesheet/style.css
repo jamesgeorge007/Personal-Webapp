@@ -54,13 +54,13 @@
             color: royalblue;
         }
         
-        #intro {
+        #intro-particles {
             display: inline-block;
             height: 654px;
             width: 1350px;
         }
         
-        #intro .blink {
+        #intro-particles .blink {
             position: absolute;
             margin-top: 25%;
             margin-left: 20%;
@@ -70,12 +70,16 @@
             font-size: 5em;
         }
         
-        #intro canvas {
+        #intro-particles canvas {
             position: absolute;
             z-index: -1;
             animation-name: change-color;
             animation-duration: 10s;
             animation-iteration-count: infinite;
+        }
+
+        #intro{
+            display: none;
         }
         
         #portfolio {
@@ -161,7 +165,7 @@
         @media screen and (max-width:1131px) {
             .nav-bar {
                 position: fixed;
-                background-color: #000;
+                background-color: rgba( 20, 20, 20, 0.8);
                 opacity: 0.9;
             }
             #portfolio h1 {
@@ -173,16 +177,22 @@
         }
         
         @media screen and (max-width: 732px) {
-            #intro {
-                margin-left: -4px;
+            #intro-particles{
+                display: none;
             }
-            #intro canvas {
-                animation: none;
-                background-color: crimson;
+            #intro {
+                display: block;
+                height: 60vh;
+                width: 100vw;
+                background-color: #0077B5;
+                z-index: -1;
+                margin-top: -30px;
+                padding-top: 50%;
             }
             #intro .blink {
-                font-size: 2.5em;
-                margin-top: 50%;
+                text-align: center;
+                color: #fff;
+                font-size: 3em;
             }
             .nav-bar {
                 height: 260px;
@@ -292,8 +302,8 @@
                 font-family: Arial, Helvetica, sans-serif;
             }
             .portfolio-section span a img {
-                width: 50px;
-                height: 60px;
+                width: 90px;
+                height: 100px;
             }
             #articles {
                 width: 100%;
