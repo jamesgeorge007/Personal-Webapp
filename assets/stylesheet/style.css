@@ -98,6 +98,7 @@
         
         #portfolio h1 {
             margin-top: -20px;
+            text-align: center;
         }
         
         #portfolio h2 {
@@ -139,6 +140,94 @@
             width: 200px;
             height: 210px;
         }
+
+        #certifications{
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #certifications h1{
+             font-family: cursive;
+             text-align: center;
+             font-size: 2.5em;
+             color: #111;
+        }
+
+        #certifications .sololearn-section, #certifications .lco-section, #certifications .udemy-section, #certifications .datacamp-section{
+            margin-top: 15%;
+        }
+
+        .sololearn-certificates img, .lco-certificates img, .udemy-certificates img, .datacamp-certificates img{
+            width: 270px;
+            height: 250px;
+            margin: 5px;
+            border: 3px solid #fff;
+            border-radius: 6%;
+        }
+
+         .logo {
+             width: 270px;
+             height: 250px;
+             animation-name: rotate;
+             animation-duration: 5s;
+             animation-iteration-count: infinite;
+         }
+
+         @keyframes rotate {
+             from{
+                 transform: none;
+             }
+             to {
+                 transform: rotate(360deg);
+             }
+         }
+
+        .sololearn-certificates img:hover,
+        .lco-certificates img:hover, 
+        .udemy-certificates img:hover, 
+        .datacamp-certificates img:hover {
+            transition: all 0.4s linear;
+            transform: scale3d(1.25, 1.25, 1.25);
+            cursor: pointer;
+            box-shadow: 4px 4px #888;
+        }
+
+        .sololearn-section .sololearn-certificates{
+            width: 90%;
+            margin: 0 auto;
+            padding: 10%;
+            background-color: #ccc;
+        }
+
+        .lco-section .lco-certificates{
+            width: 40%;
+            margin: 0 auto;
+            padding: 10%;
+            background-color: #ccc;
+        }
+
+        .udemy-section .udemy-certificates {
+            width: 40%;
+            margin: 0 auto;
+            padding: 10%;
+            background-color: #ccc;
+        }
+
+        .datacamp-section .datacamp-certificates {
+            width: 40%;
+            margin: 0 auto;
+            padding: 10%;
+            background-color: #ccc;
+        }
+
+        .sololearn-section .sololearn-certificates img,
+        .lco-section .lco-certificates img,
+        .udemy-section .udemy-certificates img,
+        .datacamp-section .datacamp-certificates img {
+            width: 320px;
+            height: 300px;
+        }
         
         @keyframes change-color {
             from {
@@ -168,10 +257,7 @@
                 background-color: rgba( 20, 20, 20, 0.8);
                 opacity: 0.9;
             }
-            #portfolio h1 {
-                font-size: 1.8em;
-            }
-            #articles h1 {
+            #portfolio h1, #articles h1, #certifications h1{
                 font-size: 1.8em;
             }
         }
@@ -189,7 +275,7 @@
                 margin-top: -30px;
                 padding-top: 50%;
                 animation-name: change;
-                animation-duration: 6s;
+                animation-duration: 12s;
                 animation-iteration-count: infinite;
             }
             #intro img{
@@ -197,7 +283,7 @@
                 border-radius: 50%;
                 border: 3px solid #fff;
             }
-            #intro .blink {
+            #intro .typed {
                 color: #fff;
                 font-size: 3em;
             }
@@ -280,9 +366,13 @@
                 width: 100px;
                 height: 110px;
             }
+            #certifications section img{
+                width: 100px;
+                height: 120px;
+            }
 
             @keyframes change{
-                0%{
+                from{
                     background-color: #3B5998;
                 }
                 20%{
@@ -297,7 +387,7 @@
                 80%{
                     background-color: #cc181e;
                 }
-                100%{
+                to{
                     background-color: #fb3958;
                 }
             }
