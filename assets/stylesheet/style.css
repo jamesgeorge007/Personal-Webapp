@@ -101,7 +101,7 @@
             text-align: center;
         }
         
-        #portfolio h2 {
+        #portfolio h2, #articles h2, #certifications h2 {
             display: none;
         }
         
@@ -127,10 +127,6 @@
             color: #111;
         }
         
-        #articles h2 {
-            display: none;
-        }
-        
         .articles-section span a {
             text-decoration: none;
             margin: 80px;
@@ -139,6 +135,39 @@
         .articles-section span a img {
             width: 200px;
             height: 210px;
+        }
+
+        .rotateDown{
+            transition: all 0.4s ease-in-out;
+            transform: rotate(180deg);
+        }
+
+        .rotateUp{
+            transition: all 0.4s ease-in-out;
+            transform: rotate(0deg);
+        }
+
+        .section-collapse{
+            transition: all 1s ease-in-out;
+            display: none;
+        }
+
+        .section-expand{
+            transition: all 1s ease-in-out;
+            display: block;
+            animation-name: zoomIn;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+        }
+
+        @keyframes zoomIn{
+            from{
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3)
+            }
+            50%{
+                opacity: 1;
+            }
         }
 
         #certifications{
@@ -166,6 +195,41 @@
             border-radius: 6%;
         }
 
+        .btn{
+            padding: 10px;
+            color: #222;
+            background-color: transparent;
+            border: 3px solid #222;
+            border-radius: 8px;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover{
+            transition: all 0.4s ease-in-out;
+            background-color: #222;
+            color: #fff;
+            border-color: #fff;
+            cursor: pointer;
+        }
+
+        .data-toggle{
+            padding: 3px;
+            color: #fff;
+            border: none;
+            background-color: #293;
+            font-size: 1.5em;
+            font-weight: bolder;
+            border-radius: 25%;
+            margin-bottom: 5px;
+        }
+
+        .data-toggle:hover{
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+            background-color: #222;
+        }
+
          .logo {
              width: 270px;
              height: 250px;
@@ -175,11 +239,8 @@
          }
 
          @keyframes rotate {
-             from{
-                 transform: none;
-             }
-             to {
-                 transform: rotate(360deg);
+             100% {
+                 transform: rotateY(360deg);
              }
          }
 
@@ -259,6 +320,9 @@
             }
             #portfolio h1, #articles h1, #certifications h1{
                 font-size: 1.8em;
+            }
+            .btn{
+                font-size: 1.6em;
             }
         }
         
@@ -345,7 +409,7 @@
             #portfolio h1 {
                 margin-top: -20px;
             }
-            #portfolio h2 {
+            #portfolio h2, #articles h2, #certifications h2 {
                 display: none;
             }
             .portfolio-section span a {
@@ -359,9 +423,6 @@
                 width: 90%;
                 margin: 180px auto;
             }
-            #articles h2 {
-                display: none;
-            }
             .articles-section span a img {
                 width: 100px;
                 height: 110px;
@@ -369,6 +430,12 @@
             #certifications section img{
                 width: 100px;
                 height: 120px;
+            }
+            .btn{
+                font-size: 1.4em;
+            }
+            .data-toggle{
+                font-size: 1.2em; 
             }
 
             @keyframes change{
@@ -404,6 +471,12 @@
                 flex-flow: column;
                 text-align: center;
             }
+            .btn{
+                font-size: 1.2em;
+            }
+            .data-toggle{
+                font-size: 1em;
+            }
         }
         
         @media screen and (max-width:386px) {
@@ -411,10 +484,10 @@
                 width: 100%;
                 text-align: center;
             }
-            #portfolio h1 {
+            #portfolio h1, #articles h1, #certifications h1 {
                 display: none;
             }
-            #portfolio h2 {
+            #portfolio h2, #articles h2, #certifications h2 {
                 display: inline-block;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -426,15 +499,23 @@
                 width: 100%;
                 text-align: center;
             }
-            #articles h1 {
-                display: none;
-            }
-            #articles h2 {
-                display: inline-block;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-            }
             .articles-section span a img {
                 width: 90px;
                 height: 100px;
             }
+            .btn{
+                font-size: 1em;
+            }
+            .data-toggle{
+                font-size: 0.8em;
+            }
+             .sololearn-certificates img:hover,
+             .lco-certificates img:hover,
+             .udemy-certificates img:hover,
+             .datacamp-certificates img:hover {
+                 transition: all 0.4s linear;
+                 transform: scale3d(2.25, 2.25, 2.25);
+                 cursor: pointer;
+                 box-shadow: 4px 4px #888;
+             }
         }
