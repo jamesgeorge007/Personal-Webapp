@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
             "Blogger.",
             "Enthusiastic Learner."
         ],
-        typeSpeed: -180,
-        backSpeed: -170,
-        backDelay: 0,
+        typeSpeed: 80,
+        backSpeed: 60,
+        backDelay: 300,
         loop: true,
     });
 

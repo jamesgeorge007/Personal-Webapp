@@ -73,9 +73,7 @@
         #intro-particles canvas {
             position: absolute;
             z-index: -1;
-            animation-name: change-color;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
+            background-color: #000;
         }
 
         #intro{
@@ -289,27 +287,7 @@
             width: 320px;
             height: 300px;
         }
-        
-        @keyframes change-color {
-            from {
-                background-color: rgb(245, 80, 20);
-            }
-            20% {
-                background-color: rgb(235, 70, 20);
-            }
-            40% {
-                background-color: rgb(225, 60, 20);
-            }
-            60% {
-                background-color: rgb(225, 50, 20);
-            }
-            80% {
-                background-color: rgb(200, 15, 180);
-            }
-            to {
-                background-color: rgb(202, 141, 61);
-            }
-        }
+    
         /* Media Queries */
         
         @media screen and (max-width:1131px) {
@@ -507,7 +485,7 @@
                 font-size: 1em;
             }
             .data-toggle{
-                font-size: 0.8em;
+                font-size: 1em;
             }
              .sololearn-certificates img:hover,
              .lco-certificates img:hover,
