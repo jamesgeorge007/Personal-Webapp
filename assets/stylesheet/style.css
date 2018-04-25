@@ -75,8 +75,8 @@
             z-index: -1;
             background-color: #000;
         }
-
-        #intro{
+        
+        #intro {
             display: none;
         }
         
@@ -99,7 +99,9 @@
             text-align: center;
         }
         
-        #portfolio h2, #articles h2, #certifications h2 {
+        #portfolio h2,
+        #articles h2,
+        #certifications h2 {
             display: none;
         }
         
@@ -134,66 +136,72 @@
             width: 200px;
             height: 210px;
         }
-
-        .rotateDown{
+        
+        .rotateDown {
             transition: all 0.4s ease-in-out;
             transform: rotate(180deg);
         }
-
-        .rotateUp{
+        
+        .rotateUp {
             transition: all 0.4s ease-in-out;
             transform: rotate(0deg);
         }
-
-        .section-collapse{
+        
+        .section-collapse {
             transition: all 1s ease-in-out;
             display: none;
         }
-
-        .section-expand{
+        
+        .section-expand {
             transition: all 1s ease-in-out;
             display: block;
             animation-name: zoomIn;
             animation-iteration-count: 1;
             animation-duration: 1s;
         }
-
-        @keyframes zoomIn{
-            from{
+        
+        @keyframes zoomIn {
+            from {
                 opacity: 0;
                 transform: scale3d(0.3, 0.3, 0.3)
             }
-            50%{
+            50% {
                 opacity: 1;
             }
         }
-
-        #certifications{
+        
+        #certifications {
             max-width: 100%;
             margin: 0 auto;
             text-align: center;
         }
-
-        #certifications h1{
-             font-family: cursive;
-             text-align: center;
-             font-size: 2.5em;
-             color: #111;
+        
+        #certifications h1 {
+            font-family: cursive;
+            text-align: center;
+            font-size: 2.5em;
+            color: #111;
         }
-
-        #certifications .sololearn-section, #certifications .lco-section, #certifications .udemy-section, #certifications .datacamp-section{
+        
+        #certifications .sololearn-section,
+        #certifications .lco-section,
+        #certifications .udemy-section,
+        #certifications .datacamp-section {
             margin-top: 15%;
         }
-
-        .sololearn-certificates img, .lco-certificates img, .udemy-certificates img, .datacamp-certificates img{
+        
+        .sololearn-certificates img,
+        .lco-certificates img,
+        .udemy-certificates img,
+        .datacamp-certificates img {
             width: 270px;
             height: 250px;
             margin: 5px;
             border: 3px solid #fff;
             border-radius: 6%;
         }
-
-        .btn{
+        
+        .btn {
             padding: 10px;
             color: #222;
             background-color: transparent;
@@ -202,16 +210,16 @@
             font-size: 2em;
             margin-bottom: 10px;
         }
-
-        .btn:hover{
+        
+        .btn:hover {
             transition: all 0.4s ease-in-out;
             background-color: #222;
             color: #fff;
             border-color: #fff;
             cursor: pointer;
         }
-
-        .data-toggle{
+        
+        .data-toggle {
             padding: 3px;
             color: #fff;
             border: none;
@@ -221,65 +229,65 @@
             border-radius: 25%;
             margin-bottom: 5px;
         }
-
-        .data-toggle:hover{
+        
+        .data-toggle:hover {
             transition: all 0.4s ease-in-out;
             cursor: pointer;
             background-color: #222;
         }
-
-         .logo {
-             width: 270px;
-             height: 250px;
-             animation-name: rotate;
-             animation-duration: 5s;
-             animation-iteration-count: infinite;
-         }
-
-         @keyframes rotate {
-             100% {
-                 transform: rotateY(360deg);
-             }
-         }
-
+        
+        .logo {
+            width: 270px;
+            height: 250px;
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes rotate {
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
         .sololearn-certificates img:hover,
-        .lco-certificates img:hover, 
-        .udemy-certificates img:hover, 
+        .lco-certificates img:hover,
+        .udemy-certificates img:hover,
         .datacamp-certificates img:hover {
             transition: all 0.4s linear;
             transform: scale3d(1.25, 1.25, 1.25);
             cursor: pointer;
             box-shadow: 4px 4px #888;
         }
-
-        .sololearn-section .sololearn-certificates{
+        
+        .sololearn-section .sololearn-certificates {
             width: 90%;
             margin: 0 auto;
             padding: 10%;
             background-color: #ccc;
         }
-
-        .lco-section .lco-certificates{
+        
+        .lco-section .lco-certificates {
             width: 40%;
             margin: 0 auto;
             padding: 10%;
             background-color: #ccc;
         }
-
+        
         .udemy-section .udemy-certificates {
             width: 40%;
             margin: 0 auto;
             padding: 10%;
             background-color: #ccc;
         }
-
+        
         .datacamp-section .datacamp-certificates {
             width: 40%;
             margin: 0 auto;
             padding: 10%;
             background-color: #ccc;
         }
-
+        
         .sololearn-section .sololearn-certificates img,
         .lco-section .lco-certificates img,
         .udemy-section .udemy-certificates img,
@@ -287,7 +295,46 @@
             width: 320px;
             height: 300px;
         }
-    
+        
+        #contact {
+            width: 80%;
+            border: 3px solid #333;
+            border-radius: 16px;
+            margin: 35% auto;
+            background-color: rgba( 20, 20, 20, 0.8);
+            padding: 10px;
+            box-shadow: 5px 8px #ddd;
+        }
+        
+        #contact form {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        #contact form input {
+            font-size: 1.8em;
+            border: 3px solid #000;
+            border-radius: 8px;
+            padding: 4px;
+            margin: 5px;
+        }
+        
+        #contact form textarea {
+            font-size: 1.8em;
+            border: 3px solid #000;
+            border-radius: 8px;
+            padding: 4px;
+            margin: 5px;
+        }
+        
+        #contact form button {
+            border: none;
+            background-color: royalblue;
+            color: #fff;
+            font-size: 1.6em;
+            padding: 4px;
+            margin: 5px;
+        }
         /* Media Queries */
         
         @media screen and (max-width:1131px) {
@@ -296,16 +343,18 @@
                 background-color: rgba( 20, 20, 20, 0.8);
                 opacity: 0.9;
             }
-            #portfolio h1, #articles h1, #certifications h1{
+            #portfolio h1,
+            #articles h1,
+            #certifications h1 {
                 font-size: 1.8em;
             }
-            .btn{
+            .btn {
                 font-size: 1.6em;
             }
         }
         
         @media screen and (max-width: 732px) {
-            #intro-particles{
+            #intro-particles {
                 display: none;
             }
             #intro {
@@ -320,8 +369,7 @@
                 animation-duration: 12s;
                 animation-iteration-count: infinite;
             }
-            #intro img{
-               
+            #intro img {
                 border-radius: 50%;
                 border: 3px solid #fff;
             }
@@ -387,7 +435,9 @@
             #portfolio h1 {
                 margin-top: -20px;
             }
-            #portfolio h2, #articles h2, #certifications h2 {
+            #portfolio h2,
+            #articles h2,
+            #certifications h2 {
                 display: none;
             }
             .portfolio-section span a {
@@ -405,34 +455,33 @@
                 width: 100px;
                 height: 110px;
             }
-            #certifications section img{
+            #certifications section img {
                 width: 100px;
                 height: 120px;
             }
-            .btn{
+            .btn {
                 font-size: 1.4em;
             }
-            .data-toggle{
-                font-size: 1.2em; 
+            .data-toggle {
+                font-size: 1.2em;
             }
-
-            @keyframes change{
-                from{
+            @keyframes change {
+                from {
                     background-color: #3B5998;
                 }
-                20%{
+                20% {
                     background-color: #0077B5;
                 }
-                40%{
-                   background-color: #0084b4;
+                40% {
+                    background-color: #0084b4;
                 }
-                60%{
+                60% {
                     background-color: #c8232c;
                 }
-                80%{
+                80% {
                     background-color: #cc181e;
                 }
-                to{
+                to {
                     background-color: #fb3958;
                 }
             }
@@ -449,10 +498,10 @@
                 flex-flow: column;
                 text-align: center;
             }
-            .btn{
+            .btn {
                 font-size: 1.2em;
             }
-            .data-toggle{
+            .data-toggle {
                 font-size: 1em;
             }
         }
@@ -462,10 +511,14 @@
                 width: 100%;
                 text-align: center;
             }
-            #portfolio h1, #articles h1, #certifications h1 {
+            #portfolio h1,
+            #articles h1,
+            #certifications h1 {
                 display: none;
             }
-            #portfolio h2, #articles h2, #certifications h2 {
+            #portfolio h2,
+            #articles h2,
+            #certifications h2 {
                 display: inline-block;
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -481,19 +534,19 @@
                 width: 90px;
                 height: 100px;
             }
-            .btn{
+            .btn {
                 font-size: 1em;
             }
-            .data-toggle{
+            .data-toggle {
                 font-size: 1em;
             }
-             .sololearn-certificates img:hover,
-             .lco-certificates img:hover,
-             .udemy-certificates img:hover,
-             .datacamp-certificates img:hover {
-                 transition: all 0.4s linear;
-                 transform: scale3d(2.25, 2.25, 2.25);
-                 cursor: pointer;
-                 box-shadow: 4px 4px #888;
-             }
+            .sololearn-certificates img:hover,
+            .lco-certificates img:hover,
+            .udemy-certificates img:hover,
+            .datacamp-certificates img:hover {
+                transition: all 0.4s linear;
+                transform: scale3d(2.25, 2.25, 2.25);
+                cursor: pointer;
+                box-shadow: 4px 4px #888;
+            }
         }
