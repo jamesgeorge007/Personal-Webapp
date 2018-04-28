@@ -296,46 +296,6 @@
             height: 300px;
         }
         
-        #contact {
-            width: 80%;
-            border: 3px solid #333;
-            border-radius: 16px;
-            margin: 35% auto;
-            background-color: rgba( 20, 20, 20, 0.8);
-            padding: 10px;
-            box-shadow: 5px 8px #ddd;
-        }
-        
-        #contact form {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        #contact form input {
-            font-size: 1.8em;
-            border: 3px solid #000;
-            border-radius: 8px;
-            padding: 4px;
-            margin: 5px;
-        }
-        
-        #contact form textarea {
-            font-size: 1.8em;
-            border: 3px solid #000;
-            border-radius: 8px;
-            padding: 4px;
-            margin: 5px;
-        }
-        
-        #contact form button {
-            border: none;
-            background-color: royalblue;
-            color: #fff;
-            font-size: 1.6em;
-            padding: 4px;
-            margin: 5px;
-        }
-        
         #footer-section {
             position: relative;
             bottom: 0;
@@ -355,6 +315,10 @@
             font-size: 2.3em;
         }
         
+        #footer-section footer a {
+            text-decoration: none;
+        }
+        
         #footer-section footer img {
             width: 60px;
             height: 70px;
@@ -372,7 +336,8 @@
             }
             #portfolio h1,
             #articles h1,
-            #certifications h1 {
+            #certifications h1,
+            #footer-section footer h2 {
                 font-size: 1.8em;
             }
             .btn {
@@ -486,6 +451,10 @@
                 width: 100px;
                 height: 120px;
             }
+            #footer-section footer img {
+                width: 60px;
+                height: 70px;
+            }
             .btn {
                 font-size: 1.4em;
             }
@@ -537,11 +506,13 @@
                 text-align: center;
                 padding: 0;
             }
-            #articles form input,
-            #articles form textarea,
-            #articles form button {
-                font-size: 1.4em;
-                padding: 2px;
+            #footer-section footer img {
+                margin: 6px;
+                height: 60px;
+                width: 50px;
+            }
+            #footer-section footer h2 {
+                font-size: 1.6em;
             }
         }
         
@@ -588,9 +559,11 @@
                 cursor: pointer;
                 box-shadow: 4px 4px #888;
             }
-            #contact form input,
-            #contact form textarea,
-            #contact form button {
-                font-size: 1.2em;
+            #footer-section {
+                height: 60%;
+            }
+            #footer-section footer img {
+                height: 50px;
+                width: 40px;
             }
         }
