@@ -186,7 +186,8 @@
         #certifications .sololearn-section,
         #certifications .lco-section,
         #certifications .udemy-section,
-        #certifications .datacamp-section {
+        #certifications .datacamp-section,
+        #certifications .freecodecamp-section {
             margin-top: 15%;
         }
         
@@ -239,15 +240,6 @@
         .logo {
             width: 270px;
             height: 250px;
-            animation-name: rotate;
-            animation-duration: 5s;
-            animation-iteration-count: infinite;
-        }
-        
-        @keyframes rotate {
-            100% {
-                transform: rotateY(360deg);
-            }
         }
         
         .sololearn-certificates img:hover,
@@ -357,13 +349,16 @@
                 z-index: -1;
                 margin-top: -30px;
                 padding-top: 50%;
-                animation-name: change;
+                /*animation-name: change;
                 animation-duration: 12s;
-                animation-iteration-count: infinite;
+                animation-iteration-count: infinite;*/
+                background-color: rgba( 20, 20, 20, 0.8);
             }
             #intro img {
                 border-radius: 50%;
                 border: 3px solid #fff;
+                height: 160px;
+                width: 170px;
             }
             #intro .typed {
                 color: #fff;
