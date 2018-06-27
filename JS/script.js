@@ -23,6 +23,7 @@ let tracker_one = 0
 let tracker_two = 0
 let tracker_three = 0
 let tracker_four = 0
+let audio = document.getElementById('song')
 
 btn.addEventListener('click', () => {
 
@@ -77,3 +78,9 @@ toggle_four.addEventListener("click", () => {
         toggle_four.className = 'data-toggle rotateUp'
     }
 })
+ 
+audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+audio.play();
