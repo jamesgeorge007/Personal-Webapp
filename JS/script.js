@@ -79,8 +79,11 @@ toggle_four.addEventListener("click", () => {
     }
 })
  
-audio.addEventListener('ended', function() {
+/* audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
-audio.play();
+audio.play(); */
+
+let backgroundScore = document.getElementById('song');
+backgroundScore.play()
