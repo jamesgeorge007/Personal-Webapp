@@ -1,3 +1,3 @@
 ## Personal Website
 
-Just click the below link to know more about me.
+> Changing the stack from vanilla js to React with Tsx in progress.
