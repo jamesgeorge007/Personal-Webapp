@@ -1,10 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
 .home-wrapper{
-    background-color: #222;
+    background-color: rgba(120, 120, 240, 0.3);
+    margin-top: -100vh;
     height: 100vh;
-    margin-top: -7vh;
+}
+
+.bg{
+    height: 100vh;
+    z-index: -1;
+    background: url('https://www.mhthemes.com/wp-content/uploads/2016/09/Adding_Code.jpg');
+    background-size: cover;   
+    background-repeat: no-repeat;
+}   
+
+.image-wrapper{
+    text-align: center;
+}
+
+.profile-img{
+    height:210px;
+    width: 220px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: 20vh
 }
 
 h1{
+    font-size: 3em;
     text-align: center;
     color: #fff;
+    font-family: 'Muli', sans-serif;
+    overflow-y: hidden;
+}
+
+.lead{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: floralwhite;
 }
