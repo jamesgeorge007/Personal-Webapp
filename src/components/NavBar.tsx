@@ -5,7 +5,7 @@ class NavBar extends React.Component<{}, any>{
       public render() {
         return (
           <div>
-            <Navbar style={{borderRadius: 0, backgroundColor: '#000'}} inverse={true} collapseOnSelect={true}>
+            <Navbar style={{borderRadius: 0, backgroundColor: '#000', marginBottom: -.5}} inverse={true} collapseOnSelect={true}>
   <Navbar.Header>
     <Navbar.Brand>
       <a href="#brand">JG</a>
