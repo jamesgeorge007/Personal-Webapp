@@ -8,7 +8,7 @@ class NavBar extends React.Component<{}, any>{
             <Navbar style={{borderRadius: 0, backgroundColor: '#000', marginBottom: -.5}} inverse={true} collapseOnSelect={true}>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="#brand">JG</a>
+      <a href="#brand" style={{color: '#fff', fontFamily: 'forte'}}>JG</a>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
