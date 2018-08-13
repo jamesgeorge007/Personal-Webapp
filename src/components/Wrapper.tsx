@@ -7,7 +7,7 @@ import Home from './Home';
 import Portfolio from './Portfolio';
 
 
-class NavBar extends React.Component<{}, any>{
+class Wrapper extends React.Component<{}, any>{
       public render() {
         return (
           <div>
@@ -44,4 +44,4 @@ class NavBar extends React.Component<{}, any>{
       }
 }
 
-export default NavBar;
+export default Wrapper;
