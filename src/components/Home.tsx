@@ -11,7 +11,7 @@ class Home extends React.Component<{}, any>{
                     <img className="profile-img" src="https://avatars2.githubusercontent.com/u/25279263?s=400&v=4" alt="profile-image"/>
                 </div>
                     <h1>James George</h1>
-                    <p className="lead">Yet another Developer</p>
+                    <p className="lead" style={{fontWeight: 400}}>Yet another Developer</p>
                 </div>
                 </div>
         );
