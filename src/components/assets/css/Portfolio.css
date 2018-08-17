@@ -1,4 +1,13 @@
+.card-wrapper{
+    width: 100%;
+    margin-top: 5vh;
+    text-align: center;
+}
+
 .portfolio-img{
-    width: 210px;
-    height: 180px;
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    padding: 8px;
 }
