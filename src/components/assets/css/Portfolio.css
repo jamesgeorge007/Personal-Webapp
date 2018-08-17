@@ -1,13 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
 .card-wrapper{
     width: 100%;
     margin-top: 5vh;
-    text-align: center;
+    font-family: 'Muli', sans-serif;
 }
 
 .portfolio-img{
     width: 105px;
-    height: 100px;
+    height: 90px;
+    padding: 12px;
     border-radius: 50%;
-    border: 2px solid #222;
-    padding: 8px;
+    box-shadow: 4px 8px 11px rgba(.7, .7, .7, .1);
+}
+
+.card{
+    text-align: center;
+    padding: 6px;
+    width: 350px;
+    height: 380px;
+    margin: 0 auto;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
 }
