@@ -8,8 +8,8 @@
 .portfolio-img{
     width: 105px;
     height: 90px;
-    padding: 12px;
-    border-radius: 50%;
+    padding: 10px;
+    border-radius: 2rem;
     box-shadow: 4px 8px 11px rgba(.7, .7, .7, .1);
 }
 
@@ -18,7 +18,25 @@
     padding: 6px;
     width: 350px;
     height: 380px;
-    margin: 0 auto;
+    margin: -2vh auto;
     background-color: rgb(250, 250, 250);
     box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
+}
+
+.jumbotron .lead{
+    color: #444;
+}
+
+.desc{
+    margin-top: 10vh;
+}
+
+.desc .lead{
+    font-size: 1.4em;
+    text-align: left;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #555;
+    line-height: 1.6em;
 }
