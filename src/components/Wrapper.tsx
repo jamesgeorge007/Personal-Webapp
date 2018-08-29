@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Nav, Navbar, NavItem  } from 'react-bootstrap';
 import { BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import './assets/css/Navbar.css';
 import Contact from './Contact';
 import Error from './Error';
 import Home from './Home';
@@ -11,35 +11,35 @@ class Wrapper extends React.Component<{}, any>{
       public render() {
         return (
           <div>
-            <BrowserRouter>
-            <div>
-            <Navbar style={{borderRadius: 0, backgroundColor: '#000', marginBottom: -.5}} inverse={true} collapseOnSelect={true}>
-    <Navbar.Header>
-      <Navbar.Brand>
-      <Link to="/" style={{outline: 'none'}}><a style={{color: '#fff', fontFamily: 'forte', textDecoration: 'none'}}>JG</a></Link>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
-      <Nav pullRight={true}>
-        <NavItem eventKey={1}>
-          <Link to="/portfolio" style={{textDecoration: 'none', color: '#fff', outline: 'none'}}>Portfolio</Link>
-        </NavItem>
-        <NavItem eventKey={2}>
-          <Link to="/contact" style={{textDecoration: 'none', color: '#fff', outline: 'none'}}>Get In Touch</Link>
-        </NavItem>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-  <Switch>
-          <Route path='/' exact={true} component={Home}/>
-          <Route path='/portfolio' component={Portfolio}/>
-          <Route path='/contact' component={Contact}/>
-          <Route path='*' component={Error}/>
-    </Switch>
-    </div>      
-  </BrowserRouter>
-          </div>
+          <BrowserRouter>
+          <div>
+          <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
+              <Link to="/"><a tabIndex={0} className="navbar-brand">JG</a></Link>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon" />
+              </button>
+
+              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item">
+                    <Link to="/portfolio"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Portfolio</a></Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/contact"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Get In Touch</a></Link>
+                  </li>
+                </ul>
+              </div>
+            </nav> 
+             
+            <Switch>
+              <Route path='/' exact={true} component={Home}/>
+              <Route path='/portfolio' component={Portfolio}/>
+              <Route path='/contact' component={Contact}/>
+              <Route path='*' component={Error}/>
+            </Switch>
+            </div>      
+            </BrowserRouter>
+        </div>
         );
       }
 }

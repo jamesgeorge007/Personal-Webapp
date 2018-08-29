@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+.navbar-custom{
+    background-color: #000;
+}
+
+a,
+a:hover{
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-brand, .nav-link{
+    font-family: 'Muli', sans-serif;
+}

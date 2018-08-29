@@ -1,42 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
-.card-wrapper{
-    width: 100%;
-    margin-top: 5vh;
+*{
     font-family: 'Muli', sans-serif;
 }
 
-.portfolio-img{
-    width: 105px;
-    height: 90px;
-    padding: 10px;
-    border-radius: 2rem;
-    box-shadow: 4px 8px 11px rgba(.7, .7, .7, .1);
+.jumbotron .lead{
+    color: #000;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .card{
-    text-align: center;
-    padding: 6px;
-    width: 350px;
-    height: 380px;
-    margin: -2vh auto;
-    background-color: rgb(250, 250, 250);
+    font-family: 'Muli';
+    padding-top: 8px;
     box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
+    text-align: center;
+    width: 22em;
 }
 
-.jumbotron .lead{
-    color: #444;
+.card:hover{
+    transition: all .3s linear;
+    cursor: pointer;
+    transform: translateY(-2.5px);
 }
 
-.desc{
-    margin-top: 10vh;
+.lead{
+    font-family: 'Muli';
 }
 
-.desc .lead{
-    font-size: 1.4em;
-    text-align: left;
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-    color: #555;
-    line-height: 1.6em;
+.btn{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+@media screen and (max-width: 1040px){
+    :root{
+        overflow: scroll;
+    } 
+
+    .card-wrapper{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 70vw;
+        margin-top: 5vh;
+    }
 }
