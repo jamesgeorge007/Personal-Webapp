@@ -4,47 +4,41 @@ import './assets/css/Portfolio.css';
 class Portfolio extends React.Component{
     public render(){
             return (
-                <div>
-                    <div className="jumbotron">
-                        <p className="lead">
-                        I build solutions for the web, mobile and pc.
-                        </p>
+            <div>
+                <div className="jumbotron">
+                    <p className="lead">
+                        I build cross platform solutions for the web, mobile and pc keeping up with the latest industry standards.
+                    </p>
+                </div>
+                <div className="card-wrapper">
+                    <div className="card">
+                        <i className="card-img-top fas fa-globe fa-5x" />
+                        <div className="card-body">
+                            <h5 className="card-title">Web</h5>
+                            <p className="card-text">Web apps built with popular technology stacks like LAMP, MEVN and MERN folllowing responsive guidelines.</p>
+                            <a href="https://www.github.com/jamesgeorge007" target="_blank" className="btn">Explore</a>
+                        </div>
                     </div>
-                    <div className="row card-wrapper">
-                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div className="card">
-                                <img className="portfolio-img" src="https://png.icons8.com/small/1600/browser-window.png" alt="web"/>
-                                <div className="desc">
-                                    <p className="lead">
-                                        Web apps built with popular technology stacks like LAMP, MEVN and MERN folllowing responsive guidelines.
-                                    </p>
-                                </div>
-                            </div>    
-                        </div>
 
-                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div className="card">
-                                <img className="portfolio-img" src="https://cdn4.iconfinder.com/data/icons/miu/24/device-iPhone-smartphone-vertical-outline-stroke-512.png" alt="mobile"/>
-                                <div className="desc">
-                                    <p className="lead">
-                                        Native mobile apps built the normal Java, kotlin way or even using cross platform frameworks like React Native.
-                                    </p>
-                                </div>
-                            </div>    
+                    <div className="card">
+                    <i className="card-img-top fas fa-mobile-alt fa-5x" />
+                        <div className="card-body">
+                            <h5 className="card-title">Mobile</h5>
+                            <p className="card-text">Native mobile apps built the normal Java, kotlin way as well as using cross platform frameworks like React Native.</p>
+                            <a href="https://www.github.com/jamesgeorge007" target="_blank" className="btn">Explore</a>
                         </div>
+                    </div>
 
-                        <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div className="card">
-                                <img className="portfolio-img" src="https://www.shareicon.net/download/2015/08/26/91130_monitor.ico" alt="pc"/>
-                                <div className="desc">
-                                    <p className="lead">
-                                        Cross platform Desktop apps built on top of Electron adopting modern design principles.
-                                    </p>
-                                </div>
-                            </div>    
+                    <div className="card">
+                    <i className="card-img-top fas fa-desktop fa-5x" />
+                    <div className="card-body">
+                            <h5 className="card-title">PC</h5>
+                            <p className="card-text">Cross platform Desktop apps built on top of Electron adopting modern design principles.</p>
+                            <a href="https://www.github.com/jamesgeorge007" target="_blank" className="btn">Explore</a>
                         </div>
                     </div>
                 </div>
+            </div>
             );
     }
 }
