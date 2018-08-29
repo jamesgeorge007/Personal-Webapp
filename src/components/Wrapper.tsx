@@ -14,7 +14,7 @@ class Wrapper extends React.Component<{}, any>{
           <BrowserRouter>
           <div>
           <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
-              <Link to="/"><a className="navbar-brand">JG</a></Link>
+              <Link to="/"><a tabIndex={0} className="navbar-brand">JG</a></Link>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
               </button>
@@ -22,10 +22,10 @@ class Wrapper extends React.Component<{}, any>{
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link to="/portfolio"> <a style={{color: '#fff'}} className="nav-link">Portfolio</a></Link>
+                    <Link to="/portfolio"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Portfolio</a></Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/contact"> <a style={{color: '#fff'}} className="nav-link">Get In Touch</a></Link>
+                    <Link to="/contact"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Get In Touch</a></Link>
                   </li>
                 </ul>
               </div>
