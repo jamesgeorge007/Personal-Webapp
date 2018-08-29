@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
+*{
+    overflow: hidden;
+}
+
 .home-wrapper{
     background-color: rgba(14, 14, 39, .6);
     margin-top: -100vh;
