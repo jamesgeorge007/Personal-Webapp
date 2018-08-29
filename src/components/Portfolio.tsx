@@ -11,7 +11,7 @@ class Portfolio extends React.Component{
                     </p>
                 </div>
                 <div className="card-wrapper">
-                    <div className="card" style={{width: '22em', textAlign: 'center'}}>
+                    <div className="card">
                         <i className="card-img-top fas fa-globe fa-5x" />
                         <div className="card-body">
                             <h5 className="card-title">Web</h5>
@@ -20,7 +20,7 @@ class Portfolio extends React.Component{
                         </div>
                     </div>
 
-                    <div className="card" style={{width: '22em', textAlign: 'center'}}>
+                    <div className="card">
                     <i className="card-img-top fas fa-mobile-alt fa-5x" />
                         <div className="card-body">
                             <h5 className="card-title">Mobile</h5>
@@ -29,7 +29,7 @@ class Portfolio extends React.Component{
                         </div>
                     </div>
 
-                    <div className="card" style={{width: '22em', textAlign: 'center'}}>
+                    <div className="card">
                     <i className="card-img-top fas fa-desktop fa-5x" />
                     <div className="card-body">
                             <h5 className="card-title">PC</h5>
