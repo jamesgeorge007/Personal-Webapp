@@ -17,6 +17,8 @@
     font-family: 'Muli';
     padding-top: 8px;
     box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
+    text-align: center;
+    width: 22em;
 }
 
 .card:hover{
@@ -26,7 +28,6 @@
 }
 
 .lead{
-    font-size: 1.4em;
     font-family: 'Muli';
 }
 
@@ -40,4 +41,21 @@
     background-color: #fff;
     color: #000;
     border-color: #000;
+}
+
+@media screen and (max-width: 1040px){
+    :root{
+        overflow: scroll;
+    } 
+
+    .card-wrapper{
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 70vw;
+        margin-top: 5vh;
+    }
 }
