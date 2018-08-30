@@ -1,4 +1,4 @@
-// import * as axios from 'axios';
+import * as axios from 'axios';
 import * as React from 'react';
 import './assets/css/Contact.css';
 
@@ -49,7 +49,14 @@ class Contact extends React.Component<{}, IState>{
 
     public submitForm = (e: any) => {
         e.preventDefault();
-        alert(this.state.name);
+        axios.post('http://localhost:4000/api/contact', 
+        this.state,
+        { headers: {
+            'Content-type': 'application/json'
+          }
+        })
+        .then((res: any) => alert(res))
+        .catch((err: any) => alert(err));
     }
 
     public render(){
