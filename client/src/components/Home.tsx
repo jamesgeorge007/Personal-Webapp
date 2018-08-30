@@ -12,6 +12,11 @@ class Home extends React.Component<{}, any>{
                 </div>
                     <h1>James George</h1>
                     <p className="lead" style={{fontWeight: 400}}>Yet another Developer</p>
+                    <div className="social-profile-icons">
+                        <i className="fab fa-twitter icon" />
+                        <i className="fab fa-github icon" />
+                        <i className="fab fa-linkedin-in icon" />
+                    </div>
                 </div>
                 </div>
         );

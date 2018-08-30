@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+.contact-bg{
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+    background: url('https://images.pexels.com/photos/1061588/pexels-photo-1061588.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;   
+    background-repeat: no-repeat;
+    filter: blur(.2px);
+    -webkit-filter: blur(.2px);
+}
+
+.contact-wrapper{
+    background-color: rgba(14, 14, 39, .3);
+    margin-top: -100vh;
+    height: 100vh;
+}
+
+.contact-form{
+    width: 35vw;
+    margin: 20vh auto;
+    padding: 16px;
+    background-color: rgba(240, 240, 240, .5);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.form-input{
+    width: 90%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 3vh;
+    padding: 12px;
+    border-radius: .375rem;
+}
+
+.form-textarea{
+    width: 90%;
+    background-color: #fff;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-radius: .375rem;
+}
+
+.social-profile-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon{
+    font-size: 3em;
+    margin: 7vh;
+    color: #fff;
+}

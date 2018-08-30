@@ -1,15 +1,21 @@
 import * as React from 'react';
+import './assets/css/Contact.css';
 
 class Contact extends React.Component{
     public render(){
             return (
                 <div>
-                    <div>
-                        <form method="post">
-                        <input type="text" className="form-control" required={true} placeholder="Name"/>
-                        <input type="email" className="form-control" required={true} placeholder="E-mail"/>
-                        <input type="text" className="form-control" required={true} placeholder="Subject"/>
-                        <textarea className="form-control" placeholder="Message" cols={30} rows={10} />
+                    <div className="contact-bg" />
+                    <div className="contact-wrapper">
+                        <form method="post" className="contact-form">
+                        <input type="text" className="form-input" required={true} placeholder="Name"/>
+                        <br />
+                        <input type="email" className="form-input" required={true} placeholder="E-mail"/>
+                        <br />
+                        <input type="text" className="form-input" required={true} placeholder="Subject"/>
+                        <br />
+                        <textarea className="form-textarea" placeholder="Message" />
+                        <br />
                         <button className="btn">Submit</button>
                         </form>
                     </div>
