@@ -19,28 +19,34 @@
     box-shadow: 12px 15px 20px rgba(0, 0, 0, .1);
     text-align: center;
     width: 22em;
+    background: linear-gradient(to bottom, #fff 50%, #000 50%);
+    border-color: #000;
+    background-size: 100% 200%;
+    transition: background-position .4s;
 }
 
-.card:hover{
-    transition: all .3s linear;
+.card:hover{ 
     cursor: pointer;
-    transform: translateY(-2.5px);
+    background-position: 0 -100%;
+    color: #fff;
+    border-color: #fff;
 }
+
 
 .lead{
     font-family: 'Muli';
 }
 
 .btn{
-    background-color: #000;
+    background-color: #222;
     color: #fff;
-    border-color: #000;
+    border-color: #222;
 }
 
 .btn:hover{
     background-color: #fff;
-    color: #000;
-    border-color: #000;
+    color: #222;
+    border-color: #222;
 }
 
 @media screen and (max-width: 1040px){
@@ -57,5 +63,11 @@
     .card{
         width: 70vw;
         margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .card{
+        width: 90vw;
     }
 }
