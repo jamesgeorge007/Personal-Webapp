@@ -2,19 +2,20 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const contactSchema = new Schema({
-    name: {
-        type: String
-    },
 
     email: {
         type: String
     },
 
-    subject: {
+    message: {
         type: String
     },
 
-    message: {
+    name: {
+        type: String
+    },
+
+    subject: {
         type: String
     }
 
