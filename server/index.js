@@ -10,11 +10,8 @@ app.use(bodyParser.urlencoded({
     extended: true
   }));
 app.use(bodyParser.json());
-
-app.use('/api', require('./routes/api'));
-
 app.use(cors());
-
+app.use('/api', require('./routes/api'));
 app.use(morgan('combined'));
 
 
@@ -31,6 +28,8 @@ mongoose.Promise = global.Promise
 app.listen(process.env.port || 4000, () => {
   console.log('Server is up in port 4000.......!')
 });
+
+ 
 
 
 
