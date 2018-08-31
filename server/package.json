@@ -11,6 +11,7 @@
   "author": "James George",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "mongoose": "^5.2.10",
