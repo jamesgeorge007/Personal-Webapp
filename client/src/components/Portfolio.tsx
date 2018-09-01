@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './assets/css/Portfolio.css';
+import '../assets/css/Portfolio.css';
 
 class Portfolio extends React.Component{
     public render(){
