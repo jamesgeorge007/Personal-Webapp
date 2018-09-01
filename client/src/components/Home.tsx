@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './assets/css/Home.css';
+import '../assets/css/Home.css';
 
 class Home extends React.Component<{}, any>{
     public render() {
