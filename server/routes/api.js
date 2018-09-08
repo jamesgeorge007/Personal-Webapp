@@ -1,5 +1,5 @@
-const saveResponse  = require('../controllers/contact_controller');
-const express = require('express');
+import saveResponse   from '../controllers/contact_controller';
+import express from 'express';
 const router = express.Router();
 router.post('/contact', saveResponse);
 
