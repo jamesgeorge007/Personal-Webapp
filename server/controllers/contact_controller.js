@@ -1,9 +1,9 @@
-const { contact } = require('../models/contact_schema');
-const sendgridClient = require('@sendgrid/mail');
+import  contact from '../models/contact_schema';
+import sendgridClient from '@sendgrid/mail';
 
 sendgridClient.setApiKey('REDACTED_SENDGRID_KEY');
 
-saveResponse = (req, res) => {
+let saveResponse = (req, res) => {
     console.log(req.body);
     contact.create(req.body)
     .then(() => {
