@@ -1,7 +1,7 @@
 import  contact from '../models/contact_schema';
 import sendgridClient from '@sendgrid/mail';
 
-sendgridClient.setApiKey('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');
+sendgridClient.setApiKey(process.env.API_KEY);
 
 let saveResponse = (req, res) => {
     console.log(req.body);
