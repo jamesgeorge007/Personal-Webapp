@@ -22,7 +22,7 @@
     background: linear-gradient(to bottom, #fff 50%, #000 50%);
     border-color: #000;
     background-size: 100% 200%;
-    transition: background-position .4s;
+    transition: background-position .8s;
 }
 
 .card:hover{ 
@@ -32,7 +32,6 @@
     border-color: #fff;
 }
 
-
 .lead{
     font-family: 'Muli';
 }
@@ -41,9 +40,10 @@
     background-color: #222;
     color: #fff;
     border-color: #222;
+    transition: background-color 2.2s;
 }
 
-.btn:hover{
+.card:hover .btn{
     background-color: #fff;
     color: #222;
     border-color: #222;
