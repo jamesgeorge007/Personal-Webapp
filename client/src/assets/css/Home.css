@@ -4,7 +4,7 @@
 }
 
 .home-wrapper{
-    background-color: rgba(14, 14, 39, .6);
+    background-color: rgba(14, 14, 39, .78);
     margin-top: -100vh;
     height: 100vh;
 }
@@ -16,8 +16,6 @@
     background: url('https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
     background-size: cover;   
     background-repeat: no-repeat;
-    filter: blur(.2px);
-    -webkit-filter: blur(.2px);
 }   
 
 .image-wrapper{
