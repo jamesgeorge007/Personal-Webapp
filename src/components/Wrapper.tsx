@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import '../assets/css/Navbar.css';
-import Contact from './Contact';
 import Error from './Error';
 import Home from './Home';
 import Portfolio from './Portfolio';
@@ -24,20 +23,16 @@ class Wrapper extends React.Component<{}, any>{
                   <li className="nav-item">
                     <Link to="/portfolio"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Portfolio</a></Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/contact"> <a tabIndex={0} style={{color: '#fff'}} className="nav-link">Get In Touch</a></Link>
-                  </li>
                 </ul>
               </div>
-            </nav> 
-             
+            </nav>
+
             <Switch>
               <Route path='/' exact={true} component={Home}/>
               <Route path='/portfolio' component={Portfolio}/>
-              <Route path='/contact' component={Contact}/>
               <Route path='*' component={Error}/>
             </Switch>
-            </div>      
+            </div>
             </BrowserRouter>
         </div>
         );
